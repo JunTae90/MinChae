@@ -29,8 +29,8 @@ Window {
 
     Maker {
         id: maker
-        onStart: model.clear()
-        onEnd: model.clear()
+        onStart: idc.visible = true
+        onEnd: idc.visible = false
     }
     FileDialog {
         id: fileDialog
@@ -222,6 +222,12 @@ Window {
                 }
             }
         }
+    }
+    BusyIndicator {
+        id: idc
+        width: 100*(parent.width/1280)
+        height: 100*(parent.height/800)
+        running: visible
     }
 }
 
