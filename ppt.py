@@ -6,7 +6,7 @@ from pptx.dml.color import *
 from PIL import Image
 class Maker(QThread):
     start = Signal()
-    end = Signal
+    end = Signal()
     def __init__(self, parent=None):
         super().__init__(parent)
         self.imgList = []

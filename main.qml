@@ -224,7 +224,9 @@ Window {
         }
     }
     BusyIndicator {
+        anchors.centerIn: parent
         id: idc
+        visible: false
         width: 100*(parent.width/1280)
         height: 100*(parent.height/800)
         running: visible
